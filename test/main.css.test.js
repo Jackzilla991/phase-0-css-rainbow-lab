@@ -24,6 +24,7 @@ describe("main.css", () => {
     const rule = findRule(css.cssRules, "#red");
     expect(rule, "Missing #red rule").to.exist;
 
+
     const hint = "Incorrect border-top-color property for #red";
     expect(rule.style["border-top-color"], hint).to.eq("#f00");
   });
